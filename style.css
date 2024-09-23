@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    /* overflow-x: none; */
+    background-color: #e9e9e9;
+    background-image: linear-gradient(225deg, #e9e9e9 66%, #ffffff 100%);
+
+    
+
+}
+.navcontainer{
+    width: 100vw;
+    min-height: 80px;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:relative
+}
+nav{
+    width: 100%;
+    padding: 0.8rem;
+    overflow-x: none;
+}
+#navlist{
+    margin-left: 15px;
+    margin-right: 15px;
+    list-style: none;
+    font-size: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#brandName{
+    font-size: 3rem;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: azure;
+}
+#navitems{
+    display: flex;
+    gap: 40px;
+    
+}
+#foot{
+    display: flex;
+    align-items: end;
+}
+.footerBox{
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    color: azure;
+    width: 100%;
+    text-align: center;
+    min-height: 30px;
+}
+.footerBox p{
+    color: azure;
+    font-size: 2rem;
+}
+.contentBox{
+    width: 60%;
+    margin: auto;
+    padding:3rem;
+    /* border: 1px solid black; */
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    box-shadow: 0px 0px 30px black;
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rightBox{
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s linear 0s;
+    
+}
+
+.rightBox img{
+    margin: 50px;
+    height: 300px;
+    border-radius: 30px;
+    transition: all 0.6s linear 0s;
+    box-shadow: 1px 1px 10px rgb(35, 34, 34);
+}
+
+.rightBox:hover{
+    transform: scale(1.1);
+}
+.leftBox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.leftBox h2{
+    font-size: 2rem;
+    text-shadow: 1px 1px 2px rgb(5, 5, 5);
+}
+.leftBox h3{
+    text-shadow: 1px 1px 1px rgb(43, 43, 42);
+}
+
+.ingBox{
+    font-size: 1.3rem;
+}
+
+.recipeBox{
+    font-size: 1.1rem
+}
+
+.rightBox .overlay{
+    position: absolute;
+    top: 12%;
+    left: 13%;
+    /* right: 12%; */
+    height: 75%;
+    width: 80.5%;
+    background-color: rgba(183, 175, 175, 0.668);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    opacity: 0;
+    transition: all 0.3s linear 0s;
+}
+.rightBox:hover .overlay{
+    opacity: 1;
+}
+.rightBox .overlay span{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.recipeBox{
+    font-style: italic;
+}
+.ingBox{
+    font-style: oblique;
+}
